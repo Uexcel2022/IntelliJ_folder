@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+-fx-background-color: "black";
+-fx-font-family: "Lucida console";
+
+}
+
+#title{
+-fx-font-weight: 800;
+-fx-font-size: 50;
+-fx-text-fill: "white";
+-fx-alignment: center;
+}
+
+#test{
+-fx-font-size:32;
+-fx-text-fill:"white";
+-fx-alignment: center; //to work you have to drag each value container in the scene builder to both edge
+}
+
+

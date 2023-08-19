@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.radiobutton.radiobutton.Controller">
+   <children>
+      <RadioButton fx:id="rApple" layoutX="51.0" layoutY="103.0" mnemonicParsing="false" onAction="#selectedButton" text="Apple">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="fruits" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBanana" layoutX="170.0" layoutY="106.0" mnemonicParsing="false" onAction="#selectedButton" text="Banana" toggleGroup="$fruits">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rOrange" layoutX="306.0" layoutY="110.0" mnemonicParsing="false" onAction="#selectedButton" text="Orange" toggleGroup="$fruits">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="-7.0" layoutY="33.0" prefHeight="18.0" prefWidth="432.0" text="Pick a fruit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

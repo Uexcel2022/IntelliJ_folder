@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.image.imageview.HelloController">
+   <children>
+      <Button fx:id="myButton" layoutX="204.0" layoutY="411.0" mnemonicParsing="false" onAction="#displayImage" text="Next" />
+      <ImageView fx:id="myViews" fitHeight="381.0" fitWidth="321.0" layoutX="66.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#displayImage" pickOnBounds="true">
+         <image>
+            <Image url="@Shrek1.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+   </children>
+</AnchorPane>
