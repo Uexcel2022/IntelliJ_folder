@@ -32,7 +32,7 @@ public class Validation {
     public String validateEmail(String email){
         if(!email.matches("[a-zA-Z0-9_.+%~-]*@[a-zA-Z0-9.]+\\.[a-zA-Z]{2,}")){
             throw new CustomException("Invalid email address.","400");
-        };
+        }
 
         return email;
     }
@@ -44,7 +44,7 @@ public class Validation {
         if(LocalDate.now().getYear() - dateOfBirt.getYear() == 17 &&
                 dateOfBirt.getDayOfYear() > LocalDate.now().getDayOfYear()-1){
             throw new CustomException("You are not up to 18 years of age.","400");
-        };
+        }
 
         return dateOfBirt;
     }

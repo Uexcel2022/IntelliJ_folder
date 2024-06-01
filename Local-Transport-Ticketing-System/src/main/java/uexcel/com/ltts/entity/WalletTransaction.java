@@ -1,8 +1,12 @@
 package uexcel.com.ltts.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
+import java.util.Date;
 
 @Entity
+@Data
 public class WalletTransaction {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

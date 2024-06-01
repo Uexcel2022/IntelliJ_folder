@@ -1,6 +1,5 @@
 package uexcel.com.ltts.controller;
 
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -10,10 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import uexcel.com.ltts.dto.SignupDto;
-import uexcel.com.ltts.entity.Client;
 import uexcel.com.ltts.service.ClientService;
-
-import java.util.Map;
 
 @RestController
 @RequestMapping("api/v1")

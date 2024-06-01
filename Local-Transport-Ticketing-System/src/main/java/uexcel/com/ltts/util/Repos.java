@@ -1,6 +1,5 @@
 package uexcel.com.ltts.util;
 
-import lombok.Data;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

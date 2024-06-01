@@ -5,7 +5,6 @@ import org.springframework.transaction.annotation.Transactional;
 import uexcel.com.ltts.dto.SignupDto;
 import uexcel.com.ltts.entity.Client;
 import uexcel.com.ltts.entity.Wallet;
-import uexcel.com.ltts.exception.CustomException;
 import uexcel.com.ltts.util.Repos;
 import uexcel.com.ltts.util.Validation;
 
@@ -13,11 +12,9 @@ import uexcel.com.ltts.util.Validation;
 @Service
 public class ClientServiceImp implements ClientService {
 
-    private final Repos repos;
     private final Validation validation;
 
     public ClientServiceImp(Repos repos, Validation validation) {
-        this.repos = repos;
         this.validation = validation;
     }
 
